@@ -1,0 +1,9 @@
+[role="banner"] {
+  display: none !important;
+}
+[data-testid="sidebarColumn"] {
+  display: none !important;
+}
+[data-testid="tweetPhoto"] {
+  display: none !important;
+}
