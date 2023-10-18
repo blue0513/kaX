@@ -2,14 +2,20 @@
   "name": "kaX",
   "version": "1.0",
   "manifest_version": 3,
-    "permissions": [
-        "scripting",
-        "webNavigation"
-    ],
-    "background": {
-        "service_worker": "worker.js"
-    },
-    "host_permissions": [
-        "https://twitter.com/*"
-    ]
+  "permissions": [
+    "scripting",
+    "webNavigation"
+  ],
+  "background": {
+    "service_worker": "worker.js"
+  },
+  "host_permissions": [
+    "https://twitter.com/*"
+  ],
+  "icons": {
+    "16": "favicon/favicon16.png",
+    "32": "favicon/favicon32.png",
+    "48": "favicon/favicon48.png",
+    "128": "favicon/favicon128.png"
+  }
 }

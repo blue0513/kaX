@@ -1,9 +1,25 @@
-[role="banner"] {
-  display: none !important;
+body {
+  display: flex !important;
+  justify-content: center !important;
 }
+
+/* left sidebar */
+[role="banner"] {
+  /* display: none !important; */
+}
+/* right sidebar */
 [data-testid="sidebarColumn"] {
   display: none !important;
 }
+/* tweet media */
 [data-testid="tweetPhoto"] {
+  display: none !important;
+}
+/* ad media */
+[data-testid="card.wrapper"] {
+  display: none !important;
+}
+/* DM banner */
+[data-testid="DMDrawer"] {
   display: none !important;
 }
