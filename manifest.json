@@ -4,11 +4,13 @@
   "manifest_version": 3,
   "permissions": [
     "scripting",
+    "tabs",
     "webNavigation"
   ],
   "background": {
     "service_worker": "worker.js"
   },
+  "action": {},
   "host_permissions": [
     "https://twitter.com/*"
   ],
