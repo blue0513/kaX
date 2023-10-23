@@ -9,6 +9,10 @@ chrome.webNavigation.onDOMContentLoaded.addListener(async ({ tabId, url }) => {
   }
 
   const enabled = getEnabled();
+  if (!enabled) {
+    showAlert(tabId);
+  }
+
   const injectionCSS = {
     target: { tabId: tabId },
     files: ["style.css"],
@@ -33,6 +37,13 @@ function getEnabled() {
 
 function reload() {
   chrome.tabs.reload();
+}
+
+function showAlert(tabId) {
+  chrome.scripting.executeScript({
+    target: { tabId: tabId },
+    func: () => alert("kaX is not currently running.\nAre you sure?"),
+  });
 }
 
 function toggleCSS(enabled, css) {
