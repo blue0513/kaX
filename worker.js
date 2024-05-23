@@ -1,7 +1,7 @@
 let kaxEnabled = true;
 
 chrome.webNavigation.onDOMContentLoaded.addListener(async ({ tabId, url }) => {
-  if (!url.startsWith("https://twitter.com/")) {
+  if (!url.startsWith("https://twitter.com/") && !url.startsWith("https://x.com/")) {
     chrome.action.disable(tabId);
     return;
   } else {
